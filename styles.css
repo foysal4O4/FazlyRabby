@@ -47,6 +47,20 @@ button:hover {
     color: #e74c3c;
 }
 
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    animation: zoomIn 1s;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -57,4 +71,9 @@ button:hover {
     0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
     40% { transform: translateY(-30px); }
     60% { transform: translateY(-15px); }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
 }
