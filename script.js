@@ -1,8 +1,3 @@
-function playMusic() {
-    const birthdayMusic = document.getElementById('birthdayMusic');
-    birthdayMusic.play();
-}
-
 function showWish() {
     const specialWishDiv = document.getElementById('specialWish');
     const birthdaySound = document.getElementById('birthdaySound');
